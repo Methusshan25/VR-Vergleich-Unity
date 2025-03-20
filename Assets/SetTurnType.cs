@@ -6,22 +6,23 @@ public class SetTurnType : MonoBehaviour
     [SerializeField] public ActionBasedContinuousMoveProvider continuousMoveProvider;
     [SerializeField] public TeleportationProvider teleportationProvider;
     [SerializeField] public XRRayInteractor teleportRay;
+    [SerializeField] public XRInteractorLineVisual xrInteractorLineVisual;
 
     public void SetTypeFromIndex(int index)
     {
         if(index == 0)
         {
-            snapTurnProvider.enabled = false;
             continuousMoveProvider.enabled = false;
             teleportationProvider.enabled = true;
             teleportRay.enabled = true;
+            xrInteractorLineVisual.reticle.SetActive(true);
         }
         else if(index == 1)
         {
-            snapTurnProvider.enabled = true;
             continuousMoveProvider.enabled = true;
             teleportationProvider.enabled = false;
             teleportRay.enabled = false;
+            xrInteractorLineVisual.reticle.SetActive(false);
         }
     }
 }

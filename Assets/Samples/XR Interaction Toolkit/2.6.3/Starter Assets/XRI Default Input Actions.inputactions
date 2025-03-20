@@ -790,6 +790,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "TeleportCenter",
+                    "type": "Button",
+                    "id": "776fd5e1-d9ea-413b-b485-58e0fc75010b",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -966,6 +975,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Menu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "36ddec9c-e159-4cef-ac01-e99e12edffa1",
+                    "path": "<XRController>{LeftHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TeleportCenter",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
